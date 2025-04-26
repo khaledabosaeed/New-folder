@@ -1,0 +1,14 @@
+design with
+html
+css  
+js 
+j Query
+
+=========
+- no framework
+= vanilla js- many pluguns
+-jQuery for plugins
+- Ui/Ux sectch 
+-mund mapping
+-No sass 
+-no pugjs
