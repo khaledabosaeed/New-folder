@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Special design</title>
     <!-- to rest page in all engine -->
+    <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="/css/normalize.css" />
     <!-- the main style -->
     <link rel="stylesheet" href="/css/style.css" />
+    <!-- font awesome -->
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,18 +19,23 @@
     />
   </head>
   <body>
+    <!-- start Setting box -->
+    <div class="setting-box">
+      <i class="fa fa-gear"></i>
+      <div class="setting-content"></div>
+    </div>
+    <!-- start Setting box -->
     <!-- start landing -->
     <div class="landing">
-      <i class="fas fa-arrow-left arrow"></i>
-
+      <i class="fa-solid fa-arrow-right carousel-arrow"></i>
       <div class="overlay"></div>
       <header>
         <div class="logo"></div>
         <ul class="links">
-          <li>main page</li>
-          <li>About</li>
-          <li>Service</li>
-          <li>Artical</li>
+          <li class="active"><a href="#">main page</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Artical</a></li>
         </ul>
       </header>
       <div class="introduction-text">
@@ -40,7 +47,7 @@
           iusto nostrum.
         </p>
       </div>
-      <i class="fas fa-arrow-right arrow"></i>
+      <i class="fa-solid fa-arrow-left carousel-arrow"></i>
     </div>
 
     <!-- End landing -->

@@ -7,9 +7,28 @@ body {
 ul li {
   list-style: none;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 :root {
   --main-color: #ffc107;
 }
+/* start setting */
+.setting-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;}
+.setting-box .fa-gear{
+}
+.setting-box .fa-gear:hover {
+  background-color: #ffffff8a;
+  transition: all 0.3s ease;
+}
+.setting-box .setting-content {
+}
+/* start setting */
+
 /* start landing  */
 .landing {
   height: 100vh;
@@ -18,15 +37,15 @@ ul li {
   overflow: hidden;
 }
 .landing::before {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 0%;
-    border-color: transparent #2f4f4fd6 transparent transparent;
-    border-style: solid;
-    border-width: 400px;
-    z-index: 0;
-    right: 0;
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  border-color: transparent #2f4f4fd6 transparent transparent;
+  border-style: solid;
+  border-width: 400px;
+  z-index: 0;
+  right: 0;
 }
 .landing .overlay {
   background-color: #00000040;
@@ -69,11 +88,16 @@ ul li {
   margin-left: 15px;
   cursor: pointer;
 }
+.landing header ul li:hover,
+.landing header ul li.active {
+  color: var(--main-color);
+  transition: all 0.3s ease;
+}
 .landing .introduction-text {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 10%;
+  transform: translateY(-10%, -40%);
   width: 500px;
   text-align: center;
   line-height: 1.6;
@@ -89,27 +113,33 @@ ul li {
 .landing .text p {
   font-size: 20px;
 }
-.arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 40px;
-    color: white;
-    cursor: pointer;
-    user-select: none;
-    padding: 12px;
-    background: rgba(0,0,0,0.5);
-    border-radius: 50%;
-  }
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+.carousel-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+}
 
-  .fa-arrow-left{
-    content: '>';
+.fa-arrow-left {
+  left: 20px;
+}
 
-    left: 20px;
-  }
-
-  .fa-arrow-right {
-    content: '>';
-    right: 20px;
-  }
+.fa-arrow-right {
+  right: 20px;
+}
 /* end landing  */
